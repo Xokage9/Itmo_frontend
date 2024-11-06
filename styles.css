@@ -1,13 +1,55 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "DynaPuff", system-ui;
     margin: 0;
     padding: 0;
-    background: #020514;
+    background: #0b080f;
+    color: #11adbe;
     
+}
+.title{
+    color: white;
+    text-shadow: 0px 1px 15px #11adbe;
+}
+header > div > a{
+    display: flex;
+    height: 60px;
+    gap: 10px;
+    justify-content: center;
+}
+
+header > div > a > img {
+    height: 40px;
+    width: 40px;
+}
+
+header h1{ 
+    text-shadow: 0px 1px 15px #11adbe;
+    margin: 2px 0;
 }
 nav {
     font-size: 120%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
 }
+
+nav a {
+    text-transform: capitalize;
+}
+nav a:hover{ 
+    color: #11adbe;
+}
+
+.menuitem{
+    color: white;
+}
+.activeitem{
+    color:#11adbe;
+    text-shadow: 0px 1px 15px #11adbe;
+}
+
 h1 {
     text-align: center;
     margin: 20px 0;
@@ -27,17 +69,10 @@ h1 {
     align-items: flex-end;
     
 }
-
-.toolbar a {
-    color: hsl(0, 0%, 84%);
-    text-decoration: none;
-    padding: 10px 35px;
-    transition: background-color 0.3s;
-    align-self:auto;
-}
-
-.toolbar a:hover {
-    background-color: #575757;
+a{
+    font-style: italic;
+    color:  white;
+    margin-left: 10px;
 }
 
 .container {
@@ -51,10 +86,12 @@ h1 {
 
 .section {
     margin-bottom: 20px;
+    font-weight: 300;
 }
 
 .section h2 {
     padding-bottom: 10px;
+    line-height: 50px;
 }
 
 .search-input {
@@ -84,4 +121,57 @@ h1 {
     width: 60px; 
     height: 60px; 
     margin-right: 5px; 
+}
+
+span#highlight, b {
+    text-shadow: 0px 1px 10px #11adbe;
+    font-style: bold;
+}
+@media screen and (width < 700px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+    .grid_container{
+        margin-top: 100px !important;
+    }
+}
+.grid_container tr:nth-child(even) td {
+    background-color: #11adbe;
+}
+
+tbody, tr {
+    display: contents;
+}
+
+td {
+    width: 100%;
+    text-align: center;
+}
+
+section a:hover {
+    color: #11adbe;
+}
+
+.grid_container {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.grid_container th {
+    color: #fff;
+}
+
+.grid_container td {
+    color: #fff;
+}
+
+.title-grid {
+    background-color: #333 !important;
 }

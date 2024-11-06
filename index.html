@@ -7,16 +7,40 @@
     <title>DotaInfo</title>
     <meta name="description" content="вся полезная информация о Доте2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./scripts/load.js" defer></script>
+    <script src="./scripts/menu.js" defer></script>
+
+
 </head>
 
 <body>
     <header>
+
+        <div>
+            <a href="index.html">
+            <img src="resourses/логотип web.webp" alt="Dota Logo">
+            <h1 class="title">DotaInfo</h1>
+            </a>
+        </div>
+        
+        <nav>
+            <a href="#" class="menuitem">Meta</a>
+            <a href="#" class="menuitem">Competitive</a>
+            <a href="items.html" class="menuitem">Items</a>
+            <a href="#" class="menuitem">Lore</a>
+
         <h1>DotaInfo</h1>
         <nav>
             <a href="#">Meta</a>
             <a href="#">Competitive</a>
             <a href="#">Items</a>
             <a href="#">Lore</a>
+
         </nav>
     </header>
     <main>
@@ -43,7 +67,11 @@
             <section>
                 <h3>ЛЕГЕНДА ДЕЗЛОЛЯТОРА</h3>
 
+
+                <p><span id="highlight">Desolator</span> — это мощный артефакт, созданный из осколков древнего кристалла, который
+
                 <p><span>Desolator</span> — это мощный артефакт, созданный из осколков древнего кристалла, который
+
                     когда-то принадлежал могущественному магу. Этот предмет излучает зловещую ауру, способную разлагать
                     жизненные силы врагов и оставлять их уязвимыми для атак.</p>
 
@@ -55,7 +83,11 @@
                     цикле разрушения.
                     Теперь <b>Desolator</b> передаётся от одного убийцы к другому, оставляя за собой след из страха и
                     разрушения. Лишь самые отважные или безумные осмеливаются <span
+
+                    id="highlight">wield</span> его, зная о цене, которую придётся заплатить за такую
+
                         style="font-weight: bold;">wield</span> его, зная о цене, которую придётся заплатить за такую
+
                     мощь.</p>
             </section>
             <section>
@@ -71,6 +103,11 @@
         <cite>Конфуций</cite><br>
         <a href="https://www.dotabuff.com/players/163057921">Dotabuff:</a>
     </footer>
+
+    <div class="load_time_container"><span id="load_time"></span></div>
+
+
+
 </body>
 
 </html>
