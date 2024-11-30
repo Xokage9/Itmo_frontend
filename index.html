@@ -11,9 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./scripts/load.js" defer></script>
     <script src="./scripts/menu.js" defer></script>
     <script src="./scripts/notes.js" defer></script>
+    <script src="./scripts/load_heroes.js" defer></script>
 </head>
 
 <body>
@@ -38,74 +41,48 @@
     <main>
         <section class="hero-section">
             <h2>Интеллект</h2>
-            <div class="hero-container">
-                <div class="hero">
-                    <img src="resourses/abc52e41-1e93-4def-9ece-05f18f331d80.jpg" alt="Герой 1">
-                    <div class="hero-name">void(да, он не интовик)</div>
-                </div>
-                <div class="hero">
-                    <img src="path/to/intelligence_hero2.jpg" alt="Герой 2">
-                    <div class="hero-name">Герой 2</div>
-                </div>
-                <div class="hero">
-                    <img src="path/to/intelligence_hero3.jpg" alt="Герой 3">
-                    <div class="hero-name">Герой 3</div>
-                </div>
+            <div class="intelligense-container">
+                <img src="https://media1.tenor.com/m/cj2bC_6fDKkAAAAd/my-new-character-chill-guy.gif" alt="chill loader" id="int-loader">
+                <template id="intelligense-hero-template">
+                    <img alt="Герой 1" id="intelligense-hero-img">
+                    <div class="hero-name" id="intelligense-hero-name"></div>
+                </template>
             </div>
         </section>
         
 
         <section class="hero-section">
             <h2>Сила</h2>
-            <div class="hero-container">
-                <div class="hero">
-                    <img src="path/to/strength_hero1.jpg" alt="Герой 1">
-                    <div class="hero-name">Герой 1</div>
-                </div>
-                <div class="hero">
-                    <img src="path/to/strength_hero2.jpg" alt="Герой 2">
-                    <div class="hero-name">Герой 2</div>
-                </div>
-                <div class="hero">
-                    <img src="path/to/strength_hero3.jpg" alt="Герой 3">
-                    <div class="hero-name">Герой 3</div>
-                </div>
+            <div class="strength-container">
+                <img src="https://media1.tenor.com/m/cj2bC_6fDKkAAAAd/my-new-character-chill-guy.gif" alt="chill loader" id="str-loader">
+                <template id="strength-template">
+                    <img alt="Герой 1" id="strength-hero-img">
+                    <div class="hero-name" id="strength-hero-name"></div>
+                </template>
             </div>
         </section>
 
         <section class="hero-section">
             <h2>Ловкость</h2>
-            <div class="hero-container">
-                <div class="hero">
-                    <img src="path/to/agility_hero1.jpg" alt="Герой 1">
-                    <div class="hero-name">Герой 1</div>
-                </div>
-                <div class="hero">
-                    <img src="path/to/agility_hero2.jpg" alt="Герой 2">
-                    <div class="hero-name">Герой 2</div>
-                </div>
-                <div class="hero">
-                    <img src="path/to/agility_hero3.jpg" alt="Герой 3">
-                    <div class="hero-name">Герой 3</div>
-                </div>
+            <div class="agility-container">
+                <img src="https://media1.tenor.com/m/cj2bC_6fDKkAAAAd/my-new-character-chill-guy.gif" alt="chill loader" id="ag-loader">
+                <template id="agility-template">
+                    <img alt="Герой 1" id="agility-hero-img">
+                    <div class="hero-name" id="agility-hero-name"></div>
+                </template>
             </div>
         </section>
 
         <section class="hero-section">
             <h2>Универсальность</h2>
-            <div class="hero-container">
-                <div class="hero">
-                    <img src="path/to/universal_hero1.jpg" alt="Герой 1">
-                    <div class="hero-name">Герой 1</div>
-                </div>
-                <div class="hero">
-                    <img src="path/to/universal_hero2.jpg" alt="Герой 2">
-                    <div class="hero-name">Герой 2</div>
-                </div>
-                <div class="hero">
-                    <img src="path/to/universal_hero3.jpg" alt="Герой 3">
-                    <div class="hero-name">Герой 3</div>
+            <div class="universal-container">
+                <img src="https://media1.tenor.com/m/cj2bC_6fDKkAAAAd/my-new-character-chill-guy.gif" alt="chill loader" id="uni-loader">
+                <template id="universal-template">
+                    <img alt="Герой 1" id="universalhero-img">
+                    <div class="hero-name" id="universal-hero-name"></div>
+                </template>
         </section>
+        
     </main>
 
     <footer>
