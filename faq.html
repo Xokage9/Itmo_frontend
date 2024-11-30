@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DotaInfo</title>
+    <meta name="description" content="вся полезная информация о Доте2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./scripts/load.js" defer></script>
+    <script src="./scripts/menu.js" defer></script>
+    <script src="./scripts/notes.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <a href="index.html">
+        <img src="resourses/логотип web.webp" alt="Dota Logo">
+        <h1 class="title">DotaInfo</h1>
+        </a>
+    </div>
+    
+    <nav>
+        <a href="index.html" class="menuitem">Главная</a>
+        <a href="#" class="menuitem">Турниры</a>
+        <a href="items.html" class="menuitem">Мета</a>
+        <a href="#" class="menuitem">Контент</a>
+        <a href="faq.html" class="menuitem">FAQ</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>На этой странице вы можете оставить заметку, по интересующей вас информации</h2>
+        <div id="note-form">
+            <input type="text" id="note-input" placeholder="Введите заметку">
+            <button onclick="saveToLocalStorage()">Сохранить заметку</button>
+        </div>
+        <div id="notes-container"></div>
+    </section>
+</main>
+
+<div class="load_time_container"><span id="load_time"></span></div>
+</body>
+</html>
