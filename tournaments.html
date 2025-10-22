@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>DotaInfo — Турниры</title>
+  <meta name="description" content="Информация о турнирах Dota 2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="./scripts/load.js" defer></script>
+  <script src="./scripts/menu.js" defer></script>
+  <script src="./scripts/notes.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="Logo header__logo">
+      <a href="index.html" class="Logo-links" aria-label="DotaInfo">
+        <img src="resourses/логотип web.webp" alt="Dota Logo" />
+        <h1 class="title header__title">DotaInfo</h1>
+      </a>
+    </div>
+
+    <nav class="header__nav nav">
+      <a href="index.html" class="menuitem nav__item">Главная</a>
+      <a href="tournaments.html" class="menuitem nav__item activeitem">Турниры</a>
+      <a href="items.html" class="menuitem nav__item">Мета</a>
+      <a href="faq.html" class="menuitem nav__item">FAQ</a>
+    </nav>
+  </header>
+
+  <div class="banner" aria-hidden="true">
+    <img src="resourses/banner.jpg" alt="Dota 2 banner" />
+  </div>
+
+  <main class="page tournaments">
+    <section class="tournaments__header">
+      <h2 class="tournaments__title">Турниры Dota 2</h2>
+      <p class="tournaments__lead">Подборка из пяти заметных турниров текущей экосистемы: финальные ивенты ESL Pro Tour, сезоны DreamLeague и крупные чемпионаты от PGL и BLAST.</p>
+    </section>
+
+    <section class="tournaments__grid" aria-label="Список турниров Dota 2">
+      <article class="tournaments__card tournament-card">
+        <figure class="tournament-card__media">
+          <img src="resourses/ryadh.jpg" alt="Esports World Cup 2025 (Dota 2)" />
+          <figcaption class="tournament-card__caption">Esports World Cup 2025 — финальный чемпионат сезона ESL Pro Tour по Dota 2</figcaption>
+        </figure>
+        <h3 class="tournament-card__title">Esports World Cup 2025</h3>
+        <p class="tournament-card__meta">Рияд, Саудовская Аравия • лето 2025</p>
+        <p class="tournament-card__desc">Ивент служит финалом 3‑го сезона ESL Pro Tour; в прежние годы проводился под брендом Riyadh Masters, собирая сильнейшие команды мира.</p>
+      </article>
+
+      <article class="tournaments__card tournament-card">
+        <figure class="tournament-card__media">
+          <img src="resourses/n58338.jpeg" alt="Riyadh Masters 2024" />
+          <figcaption class="tournament-card__caption">Riyadh Masters 2024 — итоговый турнир сезона EPT 2</figcaption>
+        </figure>
+        <h3 class="tournament-card__title">Riyadh Masters 2024</h3>
+        <p class="tournament-card__meta">Рияд, Саудовская Аравия • 2024</p>
+        <p class="tournament-card__desc">Третье издание серии, выступавшее финальным чемпионатом второго сезона ESL Pro Tour по Dota 2.</p>
+      </article>
+
+      <article class="tournaments__card tournament-card">
+        <figure class="tournament-card__media">
+          <img src="resourses/dreamleague-season-26-18434.jpg" alt="DreamLeague Season 26" />
+          <figcaption class="tournament-card__caption">DreamLeague S26 — онлайн‑сезон с 16 участниками</figcaption>
+        </figure>
+        <h3 class="tournament-card__title">DreamLeague Season 26</h3>
+        <p class="tournament-card__meta">Европа (онлайн) • май–июнь 2025</p>
+        <p class="tournament-card__desc">Сезон от ESL с 16 командами, групповыми этапами и плей‑офф; часть экосистемы ESL Pro Tour с призовым фондом в $1 млн.</p>
+      </article>
+
+      <article class="tournaments__card tournament-card">
+        <figure class="tournament-card__media">
+          <img src="resourses/blast5.jpg" alt="BLAST Slam V" />
+          <figcaption class="tournament-card__caption">BLAST Slam V — турнир уровня Tier‑1</figcaption>
+        </figure>
+        <h3 class="tournament-card__title">BLAST Slam V</h3>
+        <p class="tournament-card__meta">Китай, Чэнду • 2025</p>
+        <p class="tournament-card__desc">Крупный чемпионат уровня Tier‑1 в календаре 2025 года с сильными участниками и значительным призовым фондом.</p>
+      </article>
+
+
+      <article class="tournaments__card tournament-card">
+        <figure class="tournament-card__media">
+          <img src="resourses/pglwallahia.jpg" alt="PGL Wallachia Season 6" />
+          <figcaption class="tournament-card__caption">PGL Wallachia S6 — крупный LAN в Румынии</figcaption>
+        </figure>
+        <h3 class="tournament-card__title">PGL Wallachia Season 6</h3>
+        <p class="tournament-card__meta">Румыния • 2025</p>
+        <p class="tournament-card__desc">Серия от PGL с традиционно высоким уровнем продакшена и конкурентным участием топ‑команд [web:86].</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small class="footer__note">© DotaInfo • Материалы: Liquipedia и новостные порталы киберспорта</small>
+  </footer>
+</body>
+</html>

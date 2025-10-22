@@ -11,88 +11,116 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./scripts/load.js" defer></script>
     <script src="./scripts/menu.js" defer></script>
     <script src="./scripts/notes.js" defer></script>
-    <script src="./scripts/load_heroes.js" defer></script>
 </head>
 
 <body>
     <header>
+  <div class="Logo">
+    <a href="index.html" class="Logo-links" aria-label="DotaInfo">
+      <img src="resourses/логотип web.webp" alt="Dota Logo" />
+      <h1 class="title">DotaInfo</h1>
+    </a>
+  </div>
 
-        <div>
-            <a href="index.html">
-                <img src="resourses/логотип web.webp" alt="Dota Logo">
-                <h1 class="title">DotaInfo</h1>
-            </a>
-        </div>
-
-        <nav>
-            <a href="index.html" class="menuitem">Главная</a>
-            <a href="#" class="menuitem">Турниры</a>
-            <a href="items.html" class="menuitem">Мета</a>
-            <a href="#" class="menuitem">Контент</a>
-            <a href="faq.html" class="menuitem">FAQ</a>
-        </nav>
-    </header>
+  <nav>
+    <a href="index.html" class="menuitem">Главная</a>
+    <a href="tournaments.html" class="menuitem">Турниры</a>
+    <a href="items.html" class="menuitem">Мета</a>
+    <a href="faq.html" class="menuitem">FAQ</a>
+  </nav>
+</header>
+    <div class="banner" aria-hidden="true">
+  <img src="resourses/banner.jpg" alt="">
+    </div>
 
     <main>
-        <section class="hero-section">
-            <h2>Интеллект</h2>
-            <div class="intelligense-container">
-                <img src="https://media1.tenor.com/m/cj2bC_6fDKkAAAAd/my-new-character-chill-guy.gif" alt="chill loader" id="int-loader">
-                <template id="intelligense-hero-template">
-                    <img alt="Герой 1" id="intelligense-hero-img">
-                    <div class="hero-name" id="intelligense-hero-name"></div>
-                </template>
-            </div>
-        </section>
-        
+    <section id="most-successful" class="section role-tables compact">
+  <h2>Most Successful Heroes by Role</h2>
 
-        <section class="hero-section">
-            <h2>Сила</h2>
-            <div class="strength-container">
-                <img src="https://media1.tenor.com/m/cj2bC_6fDKkAAAAd/my-new-character-chill-guy.gif" alt="chill loader" id="str-loader">
-                <template id="strength-template">
-                    <img alt="Герой 1" id="strength-hero-img">
-                    <div class="hero-name" id="strength-hero-name"></div>
-                </template>
-            </div>
-        </section>
+  <div class="content-grid">
+    <div class="table-scroll">
+      <table class="role-table vertical-table" aria-label="Top 6 Heroes by Role (vertical, ≥50% WR, last 8 days)">
+        <thead>
+          <tr>
+            <th scope="col">overall</th>
+            <th scope="col">pos1</th>
+            <th scope="col">pos2</th>
+            <th scope="col">pos3</th>
+            <th scope="col">pos4</th>
+            <th scope="col">pos5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Juggernaut — Bladeform • 3.2K • 54.2% • 3511</td>
+            <td>Juggernaut — Bladeform • 3.1K • 54.6% • 3511</td>
+            <td>Leshrac — Misanthropy • 1.5K • 55.6% • 3287</td>
+            <td>Pudge — Fresh Meat • 635 • 55.9% • 3140</td>
+            <td>Spirit Breaker — Bull Rush • 1.5K • 53.8% • 3209</td>
+            <td>Disruptor — Thunderstorm • 1.6K • 53.9% • 3227</td>
+          </tr>
+          <tr>
+            <td>Snapfire — Full Bore • 2.7K • 52.2% • 3119</td>
+            <td>Ursa — Grudge Bearer • 1.4K • 55.0% • 3276</td>
+            <td>Queen of Pain — Bondage • 2.0K • 51.6% • 3102</td>
+            <td>Dawnbreaker — Solar Charged • 1.3K • 52.9% • 3117</td>
+            <td>Snapfire — Full Bore • 1.5K • 52.3% • 3119</td>
+            <td>Snapfire — Full Bore • 1.1K • 52.7% • 3100</td>
+          </tr>
+          <tr>
+            <td>Nature’s Prophet — Soothing Saplings • 3.6K • 50.5% • 3114</td>
+            <td>Ursa — Bear Down • 1.3K • 53.2% • 3158</td>
+            <td>Earthshaker — Tectonic Buildup • 775 • 53.5% • 3097</td>
+            <td>Slardar — Leg Day • 1.1K • 52.8% • 3110</td>
+            <td>Pudge — Fresh Meat • 960 • 53.1% • 3104</td>
+            <td>Pugna — Siphoning Ward • 697 • 52.8% • 3061</td>
+          </tr>
+          <tr>
+            <td>Pudge — Fresh Meat • 2.7K • 51.8% • 3104</td>
+            <td>Nature’s Prophet — Soothing Saplings • 1.4K • 52.5% • 3114</td>
+            <td>Invoker — Agent of Gallaron • 837 • 52.7% • 3073</td>
+            <td>Legion Commander — Stonehall Plate • 1.2K • 51.8% • 3076</td>
+            <td>Earthshaker — Tectonic Buildup • 8.235 • 53.5% • 3088</td>
+            <td>Ogre Magi — Learning Curve • 697 • 51.8% • 3033</td>
+          </tr>
+          <tr>
+            <td>Queen of Pain — Bondage • 2.8K • 50.9% • 3102</td>
+            <td>Anti‑Mage — Mana Thirst • 1.3K • 51.1% • 3036</td>
+            <td>Void Spirit — Sanctuary • 816 • 52.0% • 3054</td>
+            <td>Axe — One Man Army • 1.7K • 51.1% • 3064</td>
+            <td>Lion — Essence Eater • 752 • 52.0% • 3046</td>
+            <td>Silencer — Suffer In Silence • 1.6K • 51.0% • 3029</td>
+          </tr>
+          <tr>
+            <td>Silencer — Suffer In Silence • 2.3K • 50.9% • 3029</td>
+            <td>Gyrocopter — Secondary Strikes • 590 • 50.5% • 2994</td>
+            <td>Ember Spirit — Chain Gang • 932 • 51.4% • 3030</td>
+            <td>Timbersaw — Shredder • 733 • 50.6% • 3015</td>
+            <td>Hoodwink — Go Nuts • 875 • 51.0% • 3035</td>
+            <td>Lion — Essence Eater • 1.2K • 50.5% • 3011</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
 
-        <section class="hero-section">
-            <h2>Ловкость</h2>
-            <div class="agility-container">
-                <img src="https://media1.tenor.com/m/cj2bC_6fDKkAAAAd/my-new-character-chill-guy.gif" alt="chill loader" id="ag-loader">
-                <template id="agility-template">
-                    <img alt="Герой 1" id="agility-hero-img">
-                    <div class="hero-name" id="agility-hero-name"></div>
-                </template>
-            </div>
-        </section>
 
-        <section class="hero-section">
-            <h2>Универсальность</h2>
-            <div class="universal-container">
-                <img src="https://media1.tenor.com/m/cj2bC_6fDKkAAAAd/my-new-character-chill-guy.gif" alt="chill loader" id="uni-loader">
-                <template id="universal-template">
-                    <img alt="Герой 1" id="universalhero-img">
-                    <div class="hero-name" id="universal-hero-name"></div>
-                </template>
-        </section>
-        
     </main>
 
     <footer>
-        <q>Pick meta = +25</q>
-        <cite>Конфуций</cite><br>
-        <a href="https://www.dotabuff.com/players/163057921">Dotabuff:</a>
+        <blockquote>
+            <p>видишь против себя войд спирита - дабли</p>
+            <cite>Конфуций 479 год до н.э</cite>
+        </blockquote>
     </footer>
-
-    <div class="load_time_container"><span id="load_time"></span></div>
-
+<div class="load_time_container"><span id="load_time"></span></div>
+    <footer class="footer">
+    <small class="footer__note">© DotaInfo ничего не лицензировано</small>
+    </footer>
 </body>
 
 </html>
